@@ -4,9 +4,9 @@ const { Pool } = pkg; // Destructure to get the 'Pool' class
 const pool = new Pool({
   user: "postgres",
   host: "localhost",
-  database: "poll-system",
+  database: "polling_system",
   password: "pinkoo1234",
-  port: 5500,
+  port: 5432,
 });
 
 export default pool;
