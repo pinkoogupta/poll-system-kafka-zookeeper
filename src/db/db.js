@@ -2,10 +2,10 @@ import pkg from "pg";  // Import the entire 'pg' module
 const { Pool } = pkg; // Destructure to get the 'Pool' class
 
 const pool = new Pool({
-  user: "postgres",
+  user: "username",
   host: "localhost",
-  database: "polling_system",
-  password: "pinkoo1234",
+  database: "database name",
+  password: "password",
   port: 5432,
 });
 
