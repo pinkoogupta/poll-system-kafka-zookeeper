@@ -3,7 +3,7 @@ import {WebSocketServer} from 'ws';  // Importing WebSocket from 'ws'
 const clients = {};
 
 export const initWebSocketServer = (server) => {
-  const wss = new WebSocketServer({ port:8080 });
+const wss = new WebSocketServer({ port:8080 });
 
   wss.on("connection", (ws) => {
     ws.on("message", (message) => {

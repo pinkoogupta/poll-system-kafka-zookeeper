@@ -11,7 +11,7 @@ consumer.on("message", async (message) => {
     const { pollId, option } = JSON.parse(message.value); // Parse the message
     // console.log(`Poll ID: ${pollId}, Option: ${option}`); 
     await updatePollCount(pollId, option);
-    const pollData = await getPollById(pollId);
+    const pollData = await getPollById(pollId); 
     broadcastUpdate(pollId, pollData);
   } catch (error) {
     console.error("Error processing message (consumer):", error);
